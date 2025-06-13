@@ -1,0 +1,246 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #444;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f0ad4e;
+  text-shadow: 1px 1px 3px #000;
+}
+
+main {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+button#abrirCajaBtn {
+  padding: 15px 35px;
+  font-size: 1.3rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,123,255,0.7);
+}
+
+button#abrirCajaBtn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 20px rgba(0,86,179,0.9);
+}
+
+#carrusel-container {
+  width: 650px;
+  height: 160px;
+  overflow: hidden;
+  background-color: #1b1b1b;
+  border-radius: 12px;
+  border: 3px solid #f0ad4e;
+  box-shadow: 0 0 15px #f0ad4e;
+  position: relative;
+}
+
+.strip {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: left 3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item {
+  flex-shrink: 0;
+  width: 130px;
+  text-align: center;
+  padding: 8px;
+  user-select: none;
+  color: #eee;
+  filter: drop-shadow(0 0 3px black);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #444;
+  transition: border-color 0.4s;
+}
+
+.item.común img {
+  border-color: #b0b0b0;
+}
+
+.item.raro img {
+  border-color: #4eaaff;
+  box-shadow: 0 0 12px #4eaaff;
+}
+
+.item.épico img {
+  border-color: #a246ff;
+  box-shadow: 0 0 15px #a246ff;
+}
+
+.item.legendario img {
+  border-color: #ffa200;
+  box-shadow: 0 0 18px #ffa200;
+}
+
+.item span {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-shadow: 0 0 5px black;
+}
+
+#resultado {
+  width: 650px;
+  background-color: #222;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  user-select: none;
+  box-shadow: 0 0 15px #f0ad4e;
+  color: #f0ad4e;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#resultado img {
+  margin-top: 20px;
+  width: 320px;
+  border-radius: 15px;
+  border: 4px solid #f0ad4e;
+  box-shadow: 0 0 20px #f0ad4e;
+}
+
+footer {
+  margin-top: 40px;
+  color: #666;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+
+body {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #111;
+  padding: 1rem;
+}
+
+#carrusel-container {
+  width: 600px;
+  height: 160px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  border: 2px solid #ccc;
+  background: #000;
+}
+
+.strip {
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+.item {
+  width: 130px;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.skin-card {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background: #222;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.skin-card img {
+  width: 100%;
+}
+
+.skin-card button {
+  margin-top: 5px;
+}
+
+.común { border: 2px solid gray; }
+.raro { border: 2px solid blue; }
+.épico { border: 2px solid purple; }
+.legendario { border: 2px solid orange; }
+
+.rareza-común { color: gray; }
+.rareza-raro { color: blue; }
+.rareza-épico { color: purple; }
+.rareza-legendario { color: orange; }
+
+
+
+
+#inventario {
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#contenedor-inventario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skin-inventario {
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  background-color: #2a2a2a;
+}
+
+.skin-inventario img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+
